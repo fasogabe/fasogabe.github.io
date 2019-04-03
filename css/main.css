@@ -1,4 +1,9 @@
+/* Body */
+body {
+    background-color: forestgreen;
+}
 
+/* Header */
 .header {
     position: relative;
     text-align: center;
@@ -14,6 +19,10 @@
     transform: translate(-50%, -50%);
 }
 
+/* Nav */
+.nav-main {
+    background-color: forestgreen;
+}
 
 /* Gallery */
 div.gallery {
