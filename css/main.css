@@ -1,13 +1,16 @@
 /* Body */
 body {
-    background-color: forestgreen;
+    background-color: papayawhip !important;
+}
+.mainBody {
+    background-color: papayawhip;
 }
 
 /* Header */
-.header {
+header {
     position: relative;
     text-align: center;
-    color: antiquewhite;
+    color: whitesmoke;
     font-family: 'Charm';
     font-size: 64px;
 }
@@ -24,19 +27,4 @@ body {
     background-color: forestgreen;
 }
 
-/* Gallery */
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 300px;
-}
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}

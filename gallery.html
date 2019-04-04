@@ -8,44 +8,46 @@
     <title>Williams House</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gallery.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
-    <script src="main.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
 </head>
 <body>
 
 <!-- Header -->
 <header>
     <img src="img/trees.png" alt="Williams House" style="width: 100%; height: 200px">
+    <div class="centered">The Historic Williams House</div>
 </header>
 
 <!-- Navbar -->
-<!-- Navbar -->
-<div class="container" id="mainNav">
-    <ul class="nav nav-pills nav-justified">
+<div class="container-fluid nav-main" id="mainNav">
+    <ul class="nav nav-justified">
+        <li class="nav-item"></li>
         <li class="nav-item">
-            <a class="nav-link text-dark active" href="index.html">Home</a>
+            <a class="nav-link text-light active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+            <a class="nav-link text-light" href="gallery.html">Gallery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" href="rates.html">Rates</a>
+            <a class="nav-link text-light" href="rates.html">Rates</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" href="contact.html">Contact</a>
+            <a class="nav-link text-light" href="contact.html">Contact</a>
         </li>
+        <li class="nav-item"></li>
     </ul>
 </div>
+</br>
 
-<div class="row">
-    
-</div>
 
-<div class="gallery">
+<!-- <div class="gallery">
     <a target="_self" href="img/blue_bed.jpg">
         <img src="img/blue_bed.jpg" alt="Blue Bedroom" width="600" height="400">
     </a>
@@ -67,9 +69,57 @@
     <a target="_self" href="img/kitchen_big_house.jpg">
        <img src="img/kitchen_big_house.jpg" alt="Kitchen" width="600" height="400">
     </a>
+</div> -->
+
+
+
+<div class="image-row">
+    <div class="column">
+        <img src="img/blue_bed.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="600" height="400">
+    </div>
+    <div class="column">
+        <img src="img/dining2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="600" height="400">
+    </div>
+    <div class="column">
+        <img src="img/Buddha_room2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="600" height="400">
+    </div>
+    <div class="column">
+        <img src="img/kitchen_big_house.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="600" height="400">
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/blue_bed.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/dining2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/Buddha_room2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/kitchen_big_house.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
 </div>
 
 
-    
+</br>
+<footer class="container-fluid">
+
+</footer>    
+
 </body>
 </html>
